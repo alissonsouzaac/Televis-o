@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include "Televisao.cpp"
+using namespace std;
+
+int main()
+{
+    Televisao control = Televisao();
+
+		cout << control.getCanal()<<endl;
+		control.aumentarCanal();
+		control.aumentarCanal();
+		cout << "Canal modificado" << endl;
+		cout << control.getCanal()<<endl;
+
+        cout << "-------------------------"<<endl;
+
+		cout << control.getVolume()<< endl;
+		control.aumentarVolume();
+		control.aumentarVolume();
+		cout << "volume modificado" << endl;
+		cout << control.getVolume()<<endl;
+
+    return 0;
+}
